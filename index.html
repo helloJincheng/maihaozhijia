@@ -4,13 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>买号之家</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./lib/font-awesome.min.css">
     <link rel="stylesheet" href="./lib/swiper-3.4.2.min.css">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
     <script type="text/javascript" src="./lib/jquery-1.10.1.min.js"></script>
     <script type="text/javascript" src="./lib/swiper-3.4.2.jquery.min.js"></script>
+    <script type="text/javascript" src="./js/base.js"></script>
 </head>
 <body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-l">
+                <span>您好，欢迎来到买号之家！</span>
+                <a href="#" class="text-org">[登录]</a>
+                <a href="#">[免费注册]</a>
+            </div>
+            <ul class="top-r">
+                <li><a href="#">网站首页</a></li>
+                <li><a href="#">买家中心<i class="fa fa-caret-down fa-fw"></i></a></li>
+                <li><a href="#">卖家中心<i class="fa fa-caret-down fa-fw"></i></a></li>
+                <li><a href="#" class="text-org">充值</a></li>
+                <li><a href="#" class="text-tx">提现</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="top-content">
+        <div class="container">
+            <img class="logo" src="./img/common/mhzj.png" alt="logo">
 
+            <div class="search">
+                <form class="search-form" action="" method="get">
+                    <div class="search-list" onmouseover="topover()" onmouseout="topout()">
+                        <div class="search-name"><span id="topnwd">商品</span> <i class="fa fa-caret-down fa-fw"></i></div>
+                        <div class="list" id="topdiv">
+                            <div class="item" onclick="topjconc(1,'商品')">商品</div>
+                            <div class="item" onclick="topjconc(2,'商家')">商家</div>
+                            <div class="item" onclick="topjconc(3,'任务')">任务</div>
+                        </div>
+                    </div>
+                    <i class="fa fa-search ion-search" aria-hidden="true"></i>
+                    <input type="text" placeholder="输入关键字">
+                    <button class="search-btn">搜&nbsp;索</button>
+                </form>
+
+            </div>
+            <div class="shop-car">购物车 <i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i></div>
+        </div>
+    </div>
 </body>
 </html>
