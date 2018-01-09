@@ -95,10 +95,10 @@ body{
       }
     }
   }
-
 }
 .top-content{
   height: 155px;
+  position: relative;
   .logo{
     float: left;
     margin-top: 30px;
@@ -203,6 +203,139 @@ body{
     &:hover{
       background-color: #e1e1e1;
     }
+  }
+  .nav{
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    >li{
+      float: left;
+      line-height: 40px;
+      a{
+        font-size: 15px;
+        display: block;
+        padding: 0 20px;
+      }
+      .actived{
+        color: #f22a38;
+      }
+    }
+    .fixed{
+      width: 200px;
+      text-align: center;
+      font-size: 15px;
+      background-color: #f22a38;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    .pro-list{
+      position: absolute;
+      top: 42px;
+      z-index: 100;
+      background-color: #f22a38;
+      >li{
+        display:flex;
+        display:-webkit-flex;
+        display:-moz-flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 14px;
+        width: 200px;
+        height: 51.25px;
+        line-height: 51.25px;
+        text-align: center;
+        .icon{
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          margin-right: 10px;
+        }
+        .icon-taobao{
+          background: url("../img/index/wangwang.png") no-repeat;
+          background-size: 15px 15px;
+        }
+        .icon-zhifubao{
+          background: url("../img/index/zhifubao.png") no-repeat;
+          background-size: 15px 15px;
+        }
+        .icon-ali{
+          background: url("../img/index/alibaba.png") no-repeat;
+          background-size: 15px 15px;
+        }
+        .icon-weixin{
+          background: url("../img/index/weixin.png") no-repeat;
+          width: 17px;
+          background-size: 17px 15px;
+        }
+        .icon-jindong{
+          background: url("../img/index/jingdong.png") no-repeat;
+          background-size: 15px 15px;
+        }
+        .icon-qq{
+          background: url("../img/index/qq.png") no-repeat;
+          background-size: 15px 15px;
+        }
+        .icon-yy{
+          background: url("../img/index/yy.png") no-repeat;
+          background-size: 15px 15px;
+        }
+        .icon-momo{
+          background: url("../img/index/momo.png") no-repeat;
+          background-size: 15px 15px;
+        }
+      }
+      .choosed{
+        background-color: #d10824;
+      }
+    }
+  }
+}
+.banner{
+  width: 100%;
+  height: 410px;
+  text-align: center;
+  .swiper-pagination {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    bottom: 35px;
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 3px;
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets{
+    width: auto;
+    padding: 0 8px;
+    background-color: #875400;
+    border-radius: 10px;
+  }
+  .swiper-pagination-bullet {
+    background-color: #cccccc;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background: #f22a38;
+  }
+  .swiper-button-prev{
+    background-image:url("../img/common/prev.png");
+    left: 50%;
+    transform: translate(-350px,0);
+    -ms-transform: translate(-350px,0);
+    -webkit-transform: translate(-350px,0);
+  }
+  .swiper-button-next{
+    background-image:url("../img/common/next.png");
+    right: 50%;
+    transform: translate(350px,0);
+    -ms-transform: translate(350px,0);
+    -webkit-transform: translate(350px,0);
+  }
+  .banner-img{
+    display: block;
+    background: url('../img/variable/banner-1.png') no-repeat center;
+    width: 100%;
+    height: 410px;
   }
 }
 .main-content{
@@ -460,6 +593,7 @@ body{
   }
   .identity{
     margin-top: 40px;
+    overflow: hidden;
     li{
       float: left;
       width: 148px;

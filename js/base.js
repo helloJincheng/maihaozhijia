@@ -1,7 +1,15 @@
-// 搜索
-
 
 $(function () {
+    var mySwiper = new Swiper ('#banner', {
+        loop: true,
+        autoplay: 8000,
+        pagination: '.swiper-pagination',
+        paginationClickable :true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    });
+
+
 
     var nsi=1;
     function topover(){
@@ -17,11 +25,11 @@ $(function () {
         $("#topnwd").html(y);
         topout();
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     $(".btn-sign").hover(function() {
         var str = $(this).attr("_title");
         var color = $(this).attr("color");
